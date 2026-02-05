@@ -2,113 +2,133 @@
 <html lang="pt-br">
 
 <head>
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <!-- Fonte do Google - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="author" content="Generation Brasil">
     <meta name="description" content="Portfólio da Generation Brasil, 
                 desenvolvedor Full Stack especializado em criar experiências 
                 digitais incríveis. Conheça meus projetos e entre em contato.">
     <meta name="robots" content="index, follow">
-
+    <!-- SWIPER CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> 
     <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
-
+<link rel="stylesheet" href="./assets/css/style.css">
     <title>Portfólio Generation Brasil</title>
 </head>
 
 <body>
-    <!-- Conteúdo da página (header) aqui -->
+    <!-- Cabeçalho da Página (header) -->
     <header>
-        <!-- TÍTULO -->
-        <div class="menu-container">
-            <a href="index.html" id="titulo">Portifólio</a>
 
-            <!-- MENU DE NAVEGAÇÃO -->
+        <div class="menu-content">
+
+            <!-- TÍTULO -->
+            <a href="index.html" id="titulo">Portfólio</a>
+
+            <!-- MENU -->
             <nav>
                 <ul class="menu-list">
-                    <li><a href="#hero">Ínicio</a></li>
-                    <li><a href="#about">Sobre Mim</a></li>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
                     <li><a href="#projects">Projetos</a></li>
                     <li><a href="#contact">Contato</a></li>
                 </ul>
+            </nav>
+
+        </div>
+
     </header>
 
-    <!-- Seção principal do conteúdo da página -->
+    <!-- Seção Principal da Página (main) -->
     <main>
 
-        <!-- Seção de Boas Vindas-->
+        <!-- Seção de Boas vindas -->
         <section id="hero" class="section-container hero-container">
 
-            <!-- Boas Vindas -->
+            <!-- BOAS VINDAS -->
             <article class="hero-content">
-                <span>Olá, eu sou a Generation Brasil</span>
-                <h1>Desenvolvedor Full Stack</h1>
-                <p>Desenvolvedor Full Stack especializado em criar experiências digitais incríveis.
-                    Conheça meus projetos e entre em contato.</p>
+
+                <span>👋 Olá, eu sou a Fernanda</span>
+                <h1>Desenvolvedora Full Stack</h1>
+                <p>Transformo ideias em código e crio experiências digitais incríveis.</p>
 
                 <div class="buttons-container">
                     <a href="#contact" class="botao">Entre em Contato</a>
-                    <a href="#about" class="botao-outline">Saiba mais...</a>
+                    <a href="#about" class="botao-outline">Saiba Mais...</a>
+                </div>
+
             </article>
 
+            <!-- IMAGEM -->
             <figure class="hero-image">
-                <img src="./assets/img/foto_dev_woman.svg" alt="Foto do Autor" class="float-animation">
+                <img src="./assets/img/foto_dev_woman.svg" alt="Foto do autor." class="float-animation">
             </figure>
+
         </section>
 
-        <!-- Seção Sobre Mim -->
+        <!-- Seção Sobre o autor -->
         <section id="about" class="section-container about-container">
 
             <figure class="about-image">
                 <img src="./assets/img/avatar_dev_woman.svg" alt="Foto do perfil">
             </figure>
+
             <article class="about-content">
-                <h2>Sobre Mim</h2>
-                <p>Sou a Generation Brasil, uma desenvolvedora Full Stack apaixonada por tecnologia e inovação.
-                    Com habilidades em diversas linguagens de programação e frameworks, estou sempre em busca de
-                    novos desafios para aprimorar minhas habilidades e criar soluções digitais impactantes.</p>
-                <p>Minha missão é transformar ideias em realidade através do código, entregando projetos de alta
-                    qualidade que atendam às necessidades dos usuários. Vamos trabalhar juntos para construir o futuro
-                    digital!</p>
-                <div class="about-buttons">
-                    <a href="#" target="_blank" class="botao">GitHub</a>
-                    <a href="#" target="_blank" class="botao-outline">Currículo</a>
-                </div>
-                <div class="data-container">
-                    <div class="data-item">
-                        <span class="data-number">100</span>
-                        <span class="data-label">Seguidores</span>
+                <h2>Sobre mim</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta assumenda, quasi sit reiciendis nihil
+                    id enim facilis iste exercitationem nostrum minus ipsa neque officia dolorum ea optio est quis
+                    magni.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta assumenda, quasi sit reiciendis nihil
+                    id enim facilis iste exercitationem nostrum minus ipsa neque officia dolorum ea optio est quis
+                    magni.</p>
+
+                <div class="about-buttons-data">
+                    <div class="buttons-container">
+                        <a href="#" target="_blank" class="botao">GitHub</a>
+                        <a href="#" target="_blank" class="botao-outline">Currículo</a>
                     </div>
-                    <div class="data-item">
-                        <span class="data-number">10</span>
-                        <span class="data-label">Repositórios</span>
+
+                    <div class="data-container">
+                        <div class="data-item">
+                            <span class="data-number">100</span>
+                            <span class="data-label">Seguidores</span>
+                        </div>
+                        <div class="data-item">
+                            <span class="data-number">10</span>
+                            <span class="data-label">Repositórios</span>
+                        </div>
                     </div>
                 </div>
             </article>
+
         </section>
 
-        <!-- Seção de Projetos -->
-        <section id="projects">
+        <!-- Seção Projetos do autor -->
+        <section id="projects" class="section-container projects-container">
             <h2>Meus Projetos</h2>
+
+            <!-- Swiper Container -->
             <div class="swiper projects-swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
 
                         <article class="project-card">
-                            <figure class="project-image">
-                                <img src="./assets/icons/languages/github.svg" alt="Ícone GitHub">
-                            </figure>
+                            <div class="project-image">
+                                <img src="./assets/icons/languages/github.svg" alt="Ícone GitHub" />
+                            </div>
 
                             <div class="project-content">
                                 <h3>Projeto Github</h3>
                                 <p>Projeto Desenvolvido no GitHub</p>
-
                                 <div class="project-tags">
                                     <span class="tag">GitHub</span>
                                 </div>
-
                                 <div class="project-buttons">
                                     <a href="#" target="_blank" class="botao botao-sm">
                                         GitHub
@@ -123,16 +143,19 @@
                     </div>
                 </div>
 
+                <!-- Botões de navegação -->
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
 
+                <!-- Paginação -->
                 <div class="swiper-pagination"></div>
             </div>
         </section>
 
-        <!-- Seção de Formulário de Contato -->
+        <!-- Seção Formulário de Contato e Redes Sociais -->
         <section id="contact" class="section-container contact-container">
 
+            <!-- REDES SOCIAIS -->
             <article class="contact-info">
                 <h2>Entre em Contato</h2>
                 <p>Sinta-se à vontade para entrar em contato comigo!</p>
@@ -150,6 +173,7 @@
                 </div>
             </article>
 
+            <!-- FORMULÁRIO -->
             <form id="formulario">
 
                 <label for="nome">Nome</label>
@@ -170,14 +194,16 @@
 
                 <button class="botao" type="submit">Enviar Mensagem</button>
             </form>
+
         </section>
 
     </main>
 
-    <!-- Rodapé da página -->
+    <!-- Rodapé da Página (footer) -->
     <footer>
-        Desenvolvido por Generation Brasil © 2026
+        Desenvolvido por Generation Brasil - 2026
     </footer>
+
 </body>
 
 </html>
